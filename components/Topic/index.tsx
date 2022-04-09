@@ -10,7 +10,7 @@ interface Props {
   slug: string;
 }
 
-export const TopicId: FC<Props> = ({ slug }) => {
+export const Topic: FC<Props> = ({ slug }) => {
   const href = `/topic/${slug}`;
   const [cardSlug, setCardSlug] = useState<string | undefined>(undefined);
   const currentCard = useMemo(() => getCardBySlug(cardSlug), [cardSlug]);
